@@ -1,0 +1,34 @@
+# Parámetros del buscador automático de ofertas.
+# Codex lo ajusta a partir de perfil/perfil.md, pero puedes editarlo a mano.
+# Las líneas que empiezan por # son comentarios y no hacen nada.
+
+# Qué buscar: cada término se busca por separado en cada portal.
+terminos = [
+  "farmacéutico",
+  "farmacéutica adjunta",
+  "técnico de calidad farmacéutica",
+]
+
+# Dónde
+ubicacion = "Granada, España"
+radio_km = 50
+
+# Portales: "indeed" y "linkedin" (búsqueda pública, sin usar tu cuenta).
+# "google" también existe pero es poco fiable.
+portales = ["indeed", "linkedin"]
+
+# Solo ofertas publicadas en los últimos N días
+dias_antiguedad = 7
+
+# Máximo de resultados por término y portal (no subir mucho: los portales bloquean)
+resultados_por_busqueda = 25
+
+# Descarta ofertas cuyo TÍTULO contenga alguna de estas palabras (sin distinguir mayúsculas)
+excluir_en_titulo = [
+  "prácticas",
+  "becario",
+  "veterinari",
+]
+
+# Solo teletrabajo (true/false)
+solo_remoto = false
