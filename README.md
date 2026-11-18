@@ -9,6 +9,7 @@ Plantilla para buscar trabajo con [Codex](https://chatgpt.com/codex) (OpenAI): e
 - `AGENTS.md`: instrucciones que Codex lee automáticamente (modos de trabajo y reglas).
 - `perfil/`: qué buscas y tu CV maestro (fuente única de tu experiencia).
 - `scripts/buscar_ofertas.py`: busca en Indeed España y en la búsqueda pública de LinkedIn con [JobSpy](https://github.com/speedyapply/JobSpy), sin usar tu cuenta. Parámetros en `config/busqueda.toml`.
+- Se usa desde Codex web (chatgpt.com/codex); también funciona con la app de escritorio.
 - `scripts/generar_docx.py`: convierte el CV y la carta adaptados a Word.
 - `ofertas/`: una carpeta por oferta (texto, evaluación, CV, carta).
 - `seguimiento.csv`: estado de cada candidatura.

@@ -21,7 +21,7 @@ Si `perfil/perfil.md` o `perfil/cv_maestro.md` siguen con los textos de ejemplo 
 Ella te pedirá las cosas con sus palabras. Identifica el modo y síguelo.
 
 ### 1. Configurar perfil ("configura mi perfil", "empecemos")
-1. Si hay un CV en PDF o Word dentro de `perfil/`, léelo y vuelca TODO su contenido a `perfil/cv_maestro.md` respetando la estructura de la plantilla. Si no lo hay, pídele que lo arrastre a esa carpeta o que lo pegue en el chat.
+1. Si hay un CV en PDF o Word dentro de `perfil/`, léelo y vuelca TODO su contenido a `perfil/cv_maestro.md` respetando la estructura de la plantilla. Si no lo hay, pídele que pegue el texto del CV en el chat (copiar todo desde Word o el PDF y pegar).
 2. Entrevístala en tandas de 3-4 preguntas como mucho para completar `perfil/perfil.md` (tipo de puesto, zona y distancia, jornada, salario mínimo, idiomas, qué descarta). Pregunta también por logros concretos con cifras que no estén en el CV.
 3. Actualiza `config/busqueda.toml` (términos de búsqueda, ubicación, radio, exclusiones) para que cuadre con el perfil. Enséñale el resultado en un resumen corto.
 4. Guarda (ver "Guardar").
@@ -80,9 +80,16 @@ Ten en cuenta las particularidades del sector farmacéutico: oficina de farmacia
 
 ## Guardar (copia de seguridad en GitHub)
 
-Esta carpeta está conectada a un repositorio privado de GitHub, que es su copia de seguridad.
+Esta carpeta es un repositorio privado de GitHub, que es su copia de seguridad. Cómo se guarda depende de dónde trabajes:
 
-- Al terminar cualquier tarea que haya cambiado archivos, ejecuta: `git add -A`, `git commit -m "<resumen corto en español>"` y `git push`.
-- Al empezar una sesión, ejecuta `git pull` por si ha trabajado desde otro sitio (por ejemplo, desde Codex web).
-- Si `git push` falla, explícale en una frase qué pasa y qué hacer (normalmente: abrir GitHub Desktop y pulsar "Push origin").
-- No hace falta que le cuentes los detalles de git: basta con "Guardado ✔".
+**Codex web (chatgpt.com/codex, en la nube)** — lo habitual:
+- No hagas `git push`. Tus cambios se guardan cuando ella los aprueba.
+- Al terminar cualquier tarea que haya cambiado archivos, dile siempre, tal cual: "Para guardar: pulsa **Crear PR** (arriba a la derecha), luego **Ver PR** y en GitHub pulsa **Merge pull request** y **Confirm merge**."
+- Si no ha guardado lo de la tarea anterior, los cambios de esta tarea no lo incluirán: recuérdaselo.
+- Usa `python3` en lugar de `py` para los scripts.
+- Si un archivo no se puede descargar desde aquí (p. ej. un `.docx`), dile que lo tendrá en GitHub, dentro de la carpeta de la oferta, con el botón de descarga, después de hacer Merge.
+
+**Codex en su ordenador (app)**:
+- Al empezar, `git pull`. Al terminar una tarea con cambios: `git add -A`, `git commit -m "<resumen corto en español>"` y `git push`.
+- Si `git push` falla, explícale en una frase qué pasa y qué hacer.
+- No hace falta contarle detalles de git: basta con "Guardado ✔".
